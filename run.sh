@@ -1,4 +1,4 @@
-RELEASE=geopos-touch-1.9.3.jar 
+RELEASE=geopos-touch-1.9.4.jar 
 GEOPOSTOUCH_OPTS=-Xmx1024M
 LOG=output.log
 LOG_EXTRA=runShTouch.log
@@ -26,8 +26,9 @@ while [[ "$backendOK" -eq 0 ]];
 do
 	echo $(date -u) "Check backend" >> $GEOPOS_TOUCH/$LOG_EXTRA
 	sleep 1	
-	status_code=$(curl --write-out %{http_code} --silent --output /dev/null http://localhost:8992/api/pos/echo)
-	if [[ "$status_code" -eq 200 ]] ;then
+	status_code_backend=$(curl --write-out %{http_code} --silent --output /dev/null http://localhost:8992/api/pos/echo)
+	echo $(date -u) "response status code $status_code_backend" >> $GEOPOS_TOUCH/$LOG_EXTRA
+	if [[ "$status_code_backend" -eq 200 ]] ;then
 		backendOK=1
 	fi
 done
