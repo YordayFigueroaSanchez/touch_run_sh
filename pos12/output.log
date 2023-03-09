@@ -1,0 +1,1810 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.6.RELEASE)
+
+2023-03-09 10:28:51 [main] INFO  u.com.geocom.geopostouch.Application - Starting Application on localhost with PID 2510 (/home/geocom/geopostouch/installations/geopostouch-1.9.4/geopos-touch-1.9.4.jar started by root in /home/geocom/geopostouch/installations/geopostouch-1.9.4)
+2023-03-09 10:28:51 [main] DEBUG u.com.geocom.geopostouch.Application - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2023-03-09 10:28:51 [main] INFO  u.com.geocom.geopostouch.Application - No active profile set, falling back to default profiles: default
+2023-03-09 10:28:52 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cf4f579: startup date [Thu Mar 09 10:28:52 CLST 2023]; root of context hierarchy
+2023-03-09 10:28:52 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/context.xml]
+2023-03-09 10:28:53 [main] INFO  o.s.c.a.ConfigurationClassBeanDefinitionReader - Skipping bean definition for [BeanMethod:name=jacksonObjectMapper,declaringClass=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration]: a definition for bean 'jacksonObjectMapper' already exists. This top-level bean definition is considered as an override.
+2023-03-09 10:28:53 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2023-03-09 10:28:53 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8992 (http)
+2023-03-09 10:28:53.938  INFO 2510 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 10:28:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-09 10:28:53.941  INFO 2510 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2023-03-09 10:28:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2023-03-09 10:28:54.026  INFO 2510 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 10:28:54 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-09 10:28:54 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1989 ms
+2023-03-09 10:28:54 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2023-03-09 10:28:54 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'CXFServlet' to [/api/*]
+2023-03-09 10:28:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-09 10:28:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-03-09 10:28:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-03-09 10:28:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2023-03-09 10:28:55.119  INFO 2510 --- [           main] org.apache.cxf.endpoint.ServerImpl       : Setting the server's publish address to be /
+2023-03-09 10:28:55 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /
+2023-03-09 10:28:55 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cf4f579: startup date [Thu Mar 09 10:28:52 CLST 2023]; root of context hierarchy
+2023-03-09 10:28:55 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-03-09 10:28:55 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-03-09 10:28:55 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-09 10:28:55 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/app_resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-09 10:28:55 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-09 10:28:55 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-09 10:28:55 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-09 10:28:55 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+2023-03-09 10:28:55 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2023-03-09 10:28:55 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8992 (http)
+2023-03-09 10:28:55 [main] INFO  u.com.geocom.geopostouch.Application - Started Application in 4.399 seconds (JVM running for 5.034)
+2023-03-09 10:29:01.669  INFO 2510 --- [nio-8992-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-03-09 10:29:01 [http-nio-8992-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-03-09 10:29:01 [http-nio-8992-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2023-03-09 10:29:01 [http-nio-8992-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2023-03-09 10:29:02 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:8992/api/backend/configuration
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:02 GMT]}
+Payload: {"error":false,"SHOW_BUTTON_RETURN_BOTTLES":"true","SHOW_BUTTON_SERVICES":"true","SHOW_BUTTON_CASHIER":"true","REMOVE_CLIENT_FLAG":"remove","ENABLED_SERVICES":"2050001419026,2050000757389,2050000757372,2050000640704,2050000297502,2050000290602,2050000290596,2050000220746,2050000182181,2050000158681,2050000158674,2050000158667,2000000002392,2000000002385,2000000002293,2000000002118,2050001432247,2050001432254","SALE_READY_POLLING_TIME":"700","PAYMENT_MODES_DISPLAY_ORDER":"1,400,61,E,S,A,64,600","TRACK_PREFIX":"%","QUICK_ACCESS_PRODUCTS":"1248,7802615005202,7802337910013,7802500000015,7801420200123,7801920000216,7802215505140,7801610022122,7702133815782,7622300990572,7802215512285,7801610591116,7802225427579","TRACK_SUFIX":";?","MAX_PIN_LENGTH":"9","MAX_RUT_LENGTH":"9","SHOW_BUTTON_CREDIT_NOTE":"true","PAYMENT_MODES_GROUPING":"E_EDENRED:180,183,188|S_SODEXO:181,184,187|A_AMIPASS:170","GIFTCARD_PAYMENT_POOLING_TIME":"500","ASK_RUT_BEFORE_SALE":"true","SHOW_BUTTON_COUPONS":"true","END_PAGE_TIMEOUT":"5000","SEARCH_PRODUCTS_AFTER_LENGTH":"3","PINPAD_STATE_POLLING_TIME":"500"}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:8992/api/pos/isAlive
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:02 GMT]}
+Payload: {"needSupervisor":false,"forSupervisor":false,"error":false,"alive":true}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:8992/api/pos/getPosConfigurations
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-6] INFO  u.c.g.geopostouch.log.EventLogger - ->getPosConfigurations response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"configurations":{"workMode":"TOUCH","supervisorBiometryEnabled":true,"restrictJunaebEnabled":true,"donationArticleId":"2050001358028","foliosDummyActive":false,"termsAndPolicyEnabled":true,"loyaltyClientDescription":"Club Unimarc","containersIds":["1","2","3","13","15","16","17"],"cancelTicketNeedAuthorization":true,"cancelTicketOnlyWithBiometry":true,"ticketReloadServerEnabled":true,"creditNoteBetweenLocalsEnabled":true,"cancelTicketEnabled":true,"pos":"80","version":"6.11.14.3","ticketReloadNeedSupervisor":true,"showLoyaltyClientName":false,"geocomBiometryEnabled":true,"local":"813","ticketWaitNeedSupervisor":true,"ticketReloadEnabled":true}}
+2023-03-09 10:29:02 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:02 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"configurations":{"workMode":"TOUCH","supervisorBiometryEnabled":true,"restrictJunaebEnabled":true,"donationArticleId":"2050001358028","foliosDummyActive":false,"termsAndPolicyEnabled":true,"loyaltyClientDescription":"Club Unimarc","containersIds":["1","2","3","13","15","16","17"],"cancelTicketNeedAuthorization":true,"cancelTicketOnlyWithBiometry":true,"ticketReloadServerEnabled":true,"creditNoteBetweenLocalsEnabled":true,"cancelTicketEnabled":true,"pos":"80","version":"6.11.14.3","ticketReloadNeedSupervisor":true,"showLoyaltyClientName":false,"geocomBiometryEnabled":true,"local":"813","ticketWaitNeedSupervisor":true,"ticketReloadEnabled":true}}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 4
+Address: http://localhost:8992/api/article/searchArticle/?code=1248
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 5
+Address: http://localhost:8992/api/article/searchArticle/?code=7802337910013
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-8] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7802337910013
+2023-03-09 10:29:02 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 6
+Address: http://localhost:8992/api/article/searchArticle/?code=7802615005202
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-9] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7802615005202
+2023-03-09 10:29:02 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 7
+Address: http://localhost:8992/api/article/searchArticle/?code=7802500000015
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7802500000015
+2023-03-09 10:29:02 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 1248
+2023-03-09 10:29:02 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 8
+Address: http://localhost:8992/api/article/searchArticle/?code=7801420200123
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-1] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7801420200123
+2023-03-09 10:29:02 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 9
+Address: http://localhost:8992/api/article/searchArticle/?code=7801920000216
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-7] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7801920000216
+2023-03-09 10:29:02 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802500000015","barcode":"7802500000015","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"759.0","description":"CABELLO LARGO LUCCHETTI 400 GR","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:02 [http-nio-8992-exec-7] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7801920000216","barcode":"7801920000216","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"4390.0","description":"ALIM PERRO CARNE ARROZ CACHUPIN 3K","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:02 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 7
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:02 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802500000015","barcode":"7802500000015","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"759.0","description":"CABELLO LARGO LUCCHETTI 400 GR","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-8] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802337910013","barcode":"7802337910013","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"790.0","description":"MOSTAZA TRAVERSO 350 GR","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:02 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"1248","barcode":"1248","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"6599.0","description":"TORTA LUCY ELAB PROPIA 15 PP","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:02 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 9
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:02 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7801920000216","barcode":"7801920000216","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"4390.0","description":"ALIM PERRO CARNE ARROZ CACHUPIN 3K","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 5
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:02 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802337910013","barcode":"7802337910013","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"790.0","description":"MOSTAZA TRAVERSO 350 GR","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:02 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"1248","barcode":"1248","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"6599.0","description":"TORTA LUCY ELAB PROPIA 15 PP","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 10
+Address: http://localhost:8992/api/article/searchArticle/?code=7702133815782
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 11
+Address: http://localhost:8992/api/article/searchArticle/?code=7802215505140
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 12
+Address: http://localhost:8992/api/article/searchArticle/?code=7622300990572
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 13
+Address: http://localhost:8992/api/article/searchArticle/?code=7801610022122
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-3] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7702133815782
+2023-03-09 10:29:02 [http-nio-8992-exec-9] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802615005202","barcode":"7802615005202","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"929.0","description":"HARINA S/POLVO SELECTA 1 KG","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:02 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 6
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:02 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802615005202","barcode":"7802615005202","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"929.0","description":"HARINA S/POLVO SELECTA 1 KG","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-2] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7802215505140
+2023-03-09 10:29:02 [http-nio-8992-exec-6] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7622300990572
+2023-03-09 10:29:02 [http-nio-8992-exec-1] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7801420200123","barcode":"7801420200123","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"1349.0","description":"ARROZ G2 ESCOGIDO CORTO TUCAPEL 1 KG","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:02 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7801610022122
+2023-03-09 10:29:02 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 8
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:02 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7801420200123","barcode":"7801420200123","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"1349.0","description":"ARROZ G2 ESCOGIDO CORTO TUCAPEL 1 KG","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 14
+Address: http://localhost:8992/api/article/searchArticle/?code=7802215512285
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:02 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7802215512285
+2023-03-09 10:29:02 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 15
+Address: http://localhost:8992/api/article/searchArticle/?code=7801610591116
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-7] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7801610591116
+2023-03-09 10:29:03 [http-nio-8992-exec-6] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7622300990572","barcode":"7622300990572","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"935.0","description":"CHICLE MENTA TRIDENT 12 UN","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 12
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7622300990572","barcode":"7622300990572","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"935.0","description":"CHICLE MENTA TRIDENT 12 UN","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 16
+Address: http://localhost:8992/api/article/searchArticle/?code=7802225427579
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - Se busca el articulo 7802225427579
+2023-03-09 10:29:03 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802215512285","barcode":"7802215512285","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"459.0","description":"GALLETA FRAC VAINILLA COSTA 130 GR","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 14
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802215512285","barcode":"7802215512285","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"459.0","description":"GALLETA FRAC VAINILLA COSTA 130 GR","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-3] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7702133815782","barcode":"7702133815782","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"290.0","description":"CARAMELO YERBABUENA LIPTUS HALLS 9 UN","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:03 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 10
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7702133815782","barcode":"7702133815782","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"290.0","description":"CARAMELO YERBABUENA LIPTUS HALLS 9 UN","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 17
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[82], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 1248 TORTA LUCY ELAB PROPIA 15 PP"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7801610022122","barcode":"7801610022122","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"590.0","description":"COCA COLA LIGHT LATA 350 CC","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 13
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7801610022122","barcode":"7801610022122","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"590.0","description":"COCA COLA LIGHT LATA 350 CC","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 18
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[86], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7802337910013 MOSTAZA TRAVERSO 350 GR"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 19
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[93], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7802500000015 CABELLO LARGO LUCCHETTI 400 GR"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-7] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7801610591116","barcode":"7801610591116","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"890.0","description":"BEBIDA FANTA PET 591 CC","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:03 [http-nio-8992-exec-2] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802215505140","barcode":"7802215505140","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"599.0","description":"GALLETA CHOCO CHIPS COSTA 125 GR","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 15
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7801610591116","barcode":"7801610591116","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"890.0","description":"BEBIDA FANTA PET 591 CC","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 11
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802215505140","barcode":"7802215505140","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"599.0","description":"GALLETA CHOCO CHIPS COSTA 125 GR","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 20
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[97], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7801920000216 ALIM PERRO CARNE ARROZ CACHUPIN 3K"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 21
+Address: http://localhost:8992/api/cashable/getAll
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - ->getCashables request: []
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - ->searchArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802225427579","barcode":"7802225427579","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"1369.0","description":"ROCKLETS MANI DOYPACK DOS EN UNO 150 GR","askQuantity":false,"measure":1,"weight":0.0}}
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 16
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"articleData":{"articleId":"7802225427579","barcode":"7802225427579","cashable":false,"compositeBarcode":false,"promotedBarcode":false,"container":false,"unitAmount":"1369.0","description":"ROCKLETS MANI DOYPACK DOS EN UNO 150 GR","askQuantity":false,"measure":1,"weight":0.0}}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 22
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[90], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7802615005202 HARINA S/POLVO SELECTA 1 KG"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-6] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7801920000216 ALIM PERRO CARNE ARROZ CACHUPIN 3K
+2023-03-09 10:29:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 20
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-3] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7802615005202 HARINA S/POLVO SELECTA 1 KG
+2023-03-09 10:29:03 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 22
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 23
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[99], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7801420200123 ARROZ G2 ESCOGIDO CORTO TUCAPEL 1 KG"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7801420200123 ARROZ G2 ESCOGIDO CORTO TUCAPEL 1 KG
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 23
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 24
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[89], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7622300990572 CHICLE MENTA TRIDENT 12 UN"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-7] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7622300990572 CHICLE MENTA TRIDENT 12 UN
+2023-03-09 10:29:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 24
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-8] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 1248 TORTA LUCY ELAB PROPIA 15 PP
+2023-03-09 10:29:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 17
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-9] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7802337910013 MOSTAZA TRAVERSO 350 GR
+2023-03-09 10:29:03 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 18
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 26
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[90], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7801610022122 COCA COLA LIGHT LATA 350 CC"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7801610022122 COCA COLA LIGHT LATA 350 CC
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 26
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 25
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[97], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7802215512285 GALLETA FRAC VAINILLA COSTA 130 GR"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-2] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7802215512285 GALLETA FRAC VAINILLA COSTA 130 GR
+2023-03-09 10:29:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 25
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 27
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[100], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7702133815782 CARAMELO YERBABUENA LIPTUS HALLS 9 UN"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-1] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7802500000015 CABELLO LARGO LUCCHETTI 400 GR
+2023-03-09 10:29:03 [http-nio-8992-exec-2] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7702133815782 CARAMELO YERBABUENA LIPTUS HALLS 9 UN
+2023-03-09 10:29:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 27
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 19
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 28
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[86], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7801610591116 BEBIDA FANTA PET 591 CC"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 29
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[95], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7802215505140 GALLETA CHOCO CHIPS COSTA 125 GR"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7802215505140 GALLETA CHOCO CHIPS COSTA 125 GR
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 29
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 30
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[102], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/loading], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se carga el articulo de acceso rapido 7802225427579 ROCKLETS MANI DOYPACK DOS EN UNO 150 GR"}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7802225427579 ROCKLETS MANI DOYPACK DOS EN UNO 150 GR
+2023-03-09 10:29:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 30
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - Se carga el articulo de acceso rapido 7801610591116 BEBIDA FANTA PET 591 CC
+2023-03-09 10:29:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 28
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:03 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - ->getCashables response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"services":[{"id":"2000000002118","description":"RECARGA VTR","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2000000002293","description":"RECARGA WOM","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2000000002385","description":"RECARGA CLARO MULTIMEDIA","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese número de celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2000000002392","description":"RECARGA VIRGIN MOBILE","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2000000002408","description":"RECARGA NETLINE","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese número de celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000158667","description":"RECARGA MOVISTAR","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000158674","description":"RECARGA CLARO","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000158681","description":"RECARGA ENTEL","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000182181","description":"RECAUD. UNIRED","productNavigation":"UniredGeoswitchContextConfigurator","mixable":false,"needAmount":false,"inputs":[{"id":"barcode","description":"Pase el código de barras por el scanner","type":"KEYBOARD_OR_SCAN","validators":{"MAX_LEGTH":13,"MIN_LEGTH":13,"NOT_EMPTY":true}},{"id":"supervisorAuth","description":"Es necesaria la autorización del Supervisor","type":"SUPERVISOR_AUTHORIZATION","validators":{}}]},{"id":"2050000182198","description":"Pago facturas - AC","productNavigation":"CreditPaymentContextConfigurator","mixable":false,"needAmount":false},{"id":"2050000220746","description":"RECARGA CLAROTV","mixable":true,"needAmount":true,"inputs":[{"id":"rut","description":"Ingrese el RUT","type":"RUT","validators":{"NOT_EMPTY":true}}]},{"id":"2050000290596","description":"DIRECTV","mixable":true,"needAmount":true,"inputs":[{"id":"rut","description":"Ingrese el RUT","type":"RUT","validators":{"NOT_EMPTY":true}}]},{"id":"2050000290602","description":"RECARGA TELSUR-GTD","mixable":true,"needAmount":true,"inputs":[{"id":"telephone","description":"Ingrese Teléfono de Red Fija","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000297502","description":"KINO CON TODO","mixable":true,"needAmount":false,"inputs":[{"id":"barcode","description":"Pase el código de barras por el scanner","type":"KEYBOARD_OR_SCAN","validators":{"MAX_LEGTH":14,"MIN_LEGTH":14,"NOT_EMPTY":true}}]},{"id":"2050000297519","description":"GANA MAS","mixable":true,"needAmount":false},{"id":"2050000466144","description":"KINO","mixable":true,"needAmount":false,"inputs":[{"id":"barcode","description":"Pase el código de barras por el scanner","type":"KEYBOARD_OR_SCAN","validators":{"MAX_LEGTH":14,"MIN_LEGTH":14,"NOT_EMPTY":true}}]},{"id":"2050000466151","description":"RE-KINO","mixable":true,"needAmount":false,"inputs":[{"id":"barcode","description":"Pase el código de barras por el scanner","type":"KEYBOARD_OR_SCAN","validators":{"MAX_LEGTH":14,"MIN_LEGTH":14,"NOT_EMPTY":true}}]},{"id":"2050000545160","description":"SEGURO DE VIDA","productNavigation":"1","mixable":false,"needAmount":false},{"id":"2050000640704","description":"ANULACION SEGURO DE VIDA","productNavigation":"1","mixable":false,"needAmount":false},{"id":"2050000757372","description":"LOTO - MANUAL","mixable":true,"needAmount":false,"inputs":[{"id":"numberInput0","description":"Ingrese la Jugada","type":"LOTO_GAME","validators":{}},{"id":"menuGameType0","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu0","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"numberInput1","description":"Ingrese la Jugada","type":"LOTO_GAME","validators":{}},{"id":"menuGameType1","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu1","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"numberInput2","description":"Ingrese la Jugada","type":"LOTO_GAME","validators":{}},{"id":"menuGameType2","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu2","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"numberInput3","description":"Ingrese la Jugada","type":"LOTO_GAME","validators":{}},{"id":"menuGameType3","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu3","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}}]},{"id":"2050000757389","description":"LOTO - AZAR","mixable":true,"needAmount":false,"inputs":[{"id":"menuGameType0","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu0","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"menuGameType1","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu1","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"menuGameType2","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu2","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"menuGameType3","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu3","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}}]},{"id":"2050001354006","description":"VENTA POS GIFTCARD","productNavigation":"GiftCardPurchaseContextConfigurator","mixable":true,"needAmount":false},{"id":"2050001354020","description":"RECARGA POS GIFTCARD","productNavigation":"GiftCardRechargeContextConfigurator","mixable":true,"needAmount":false},{"id":"2050001358028","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001358035","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001358042","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001419026","description":"PAGO TARJETA UNIMARC","productNavigation":"TUCPaymentContextConfigurator","mixable":false,"needAmount":false},{"id":"2050001432247","description":"RECARGA POS GIFTCARD","productNavigation":"GiftCardRechargeContextConfigurator","mixable":true,"needAmount":false},{"id":"2050001432254","description":"VENTA POS GIFTCARD","productNavigation":"GiftCardPurchaseContextConfigurator","mixable":true,"needAmount":false},{"id":"2050001551122","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001551139","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001551146","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001569875","description":"COVID-19","mixable":true,"needAmount":true},{"id":"78004881953","description":"Donacion CoVid","mixable":true,"needAmount":false}]}
+2023-03-09 10:29:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 21
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"services":[{"id":"2000000002118","description":"RECARGA VTR","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2000000002293","description":"RECARGA WOM","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2000000002385","description":"RECARGA CLARO MULTIMEDIA","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese número de celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2000000002392","description":"RECARGA VIRGIN MOBILE","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2000000002408","description":"RECARGA NETLINE","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese número de celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000158667","description":"RECARGA MOVISTAR","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000158674","description":"RECARGA CLARO","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000158681","description":"RECARGA ENTEL","mixable":true,"needAmount":true,"inputs":[{"id":"celular","description":"Ingrese el número del celular","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000182181","description":"RECAUD. UNIRED","productNavigation":"UniredGeoswitchContextConfigurator","mixable":false,"needAmount":false,"inputs":[{"id":"barcode","description":"Pase el código de barras por el scanner","type":"KEYBOARD_OR_SCAN","validators":{"MAX_LEGTH":13,"MIN_LEGTH":13,"NOT_EMPTY":true}},{"id":"supervisorAuth","description":"Es necesaria la autorización del Supervisor","type":"SUPERVISOR_AUTHORIZATION","validators":{}}]},{"id":"2050000182198","description":"Pago facturas - AC","productNavigation":"CreditPaymentContextConfigurator","mixable":false,"needAmount":false},{"id":"2050000220746","description":"RECARGA CLAROTV","mixable":true,"needAmount":true,"inputs":[{"id":"rut","description":"Ingrese el RUT","type":"RUT","validators":{"NOT_EMPTY":true}}]},{"id":"2050000290596","description":"DIRECTV","mixable":true,"needAmount":true,"inputs":[{"id":"rut","description":"Ingrese el RUT","type":"RUT","validators":{"NOT_EMPTY":true}}]},{"id":"2050000290602","description":"RECARGA TELSUR-GTD","mixable":true,"needAmount":true,"inputs":[{"id":"telephone","description":"Ingrese Teléfono de Red Fija","type":"MOBILE_PHONE","validators":{"MAX_LEGTH":10,"MIN_LEGTH":8,"NOT_EMPTY":true}}]},{"id":"2050000297502","description":"KINO CON TODO","mixable":true,"needAmount":false,"inputs":[{"id":"barcode","description":"Pase el código de barras por el scanner","type":"KEYBOARD_OR_SCAN","validators":{"MAX_LEGTH":14,"MIN_LEGTH":14,"NOT_EMPTY":true}}]},{"id":"2050000297519","description":"GANA MAS","mixable":true,"needAmount":false},{"id":"2050000466144","description":"KINO","mixable":true,"needAmount":false,"inputs":[{"id":"barcode","description":"Pase el código de barras por el scanner","type":"KEYBOARD_OR_SCAN","validators":{"MAX_LEGTH":14,"MIN_LEGTH":14,"NOT_EMPTY":true}}]},{"id":"2050000466151","description":"RE-KINO","mixable":true,"needAmount":false,"inputs":[{"id":"barcode","description":"Pase el código de barras por el scanner","type":"KEYBOARD_OR_SCAN","validators":{"MAX_LEGTH":14,"MIN_LEGTH":14,"NOT_EMPTY":true}}]},{"id":"2050000545160","description":"SEGURO DE VIDA","productNavigation":"1","mixable":false,"needAmount":false},{"id":"2050000640704","description":"ANULACION SEGURO DE VIDA","productNavigation":"1","mixable":false,"needAmount":false},{"id":"2050000757372","description":"LOTO - MANUAL","mixable":true,"needAmount":false,"inputs":[{"id":"numberInput0","description":"Ingrese la Jugada","type":"LOTO_GAME","validators":{}},{"id":"menuGameType0","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu0","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"numberInput1","description":"Ingrese la Jugada","type":"LOTO_GAME","validators":{}},{"id":"menuGameType1","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu1","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"numberInput2","description":"Ingrese la Jugada","type":"LOTO_GAME","validators":{}},{"id":"menuGameType2","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu2","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"numberInput3","description":"Ingrese la Jugada","type":"LOTO_GAME","validators":{}},{"id":"menuGameType3","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu3","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}}]},{"id":"2050000757389","description":"LOTO - AZAR","mixable":true,"needAmount":false,"inputs":[{"id":"menuGameType0","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu0","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"menuGameType1","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu1","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"menuGameType2","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu2","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}},{"id":"menuGameType3","description":"Seleccione una opcion","type":"MENU","menuItems":[{"id":"LOTO","description":"LOTO"},{"id":"RECARGADO","description":"LOTO + RECARGADO"},{"id":"REVANCHA","description":"LOTO + RECARGADO + REVANCHA"},{"id":"DESQUITE","description":"LOTO + RECARGADO + REVANCHA + DESQUITE"},{"id":"JUBILAZO","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO"},{"id":"MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + MULTIPLICAR"},{"id":"JUBILAZO + MULTIPLICAR","description":"LOTO + RECARGADO + REVANCHA + DESQUITE + JUBILAZO + MULTIPLICAR"}],"validators":{}},{"id":"anotherGameMenu3","description":"¿Ingresar Otra jugada?","type":"YES_NO_CONTINUE","validators":{}}]},{"id":"2050001354006","description":"VENTA POS GIFTCARD","productNavigation":"GiftCardPurchaseContextConfigurator","mixable":true,"needAmount":false},{"id":"2050001354020","description":"RECARGA POS GIFTCARD","productNavigation":"GiftCardRechargeContextConfigurator","mixable":true,"needAmount":false},{"id":"2050001358028","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001358035","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001358042","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001419026","description":"PAGO TARJETA UNIMARC","productNavigation":"TUCPaymentContextConfigurator","mixable":false,"needAmount":false},{"id":"2050001432247","description":"RECARGA POS GIFTCARD","productNavigation":"GiftCardRechargeContextConfigurator","mixable":true,"needAmount":false},{"id":"2050001432254","description":"VENTA POS GIFTCARD","productNavigation":"GiftCardPurchaseContextConfigurator","mixable":true,"needAmount":false},{"id":"2050001551122","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001551139","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001551146","description":"FONDO DESCUBREME","mixable":true,"needAmount":false},{"id":"2050001569875","description":"COVID-19","mixable":true,"needAmount":true},{"id":"78004881953","description":"Donacion CoVid","mixable":true,"needAmount":false}]}
+--------------------------------------
+2023-03-09 10:29:08 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 31
+Address: http://localhost:8992/api/supervisor/getUserInformation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[38], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/open-pos], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"userId":"11125","type":"supervisor"}
+--------------------------------------
+2023-03-09 10:29:08 [http-nio-8992-exec-6] INFO  u.c.g.geopostouch.log.EventLogger - ->getUserInformation request: getUserInformationRequest(userId=11125, type=supervisor)
+2023-03-09 10:29:08 [http-nio-8992-exec-6] INFO  u.c.g.geopostouch.log.EventLogger - ->getUserInformation response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"havePassword":true}
+2023-03-09 10:29:08 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 31
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:08 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"havePassword":true}
+--------------------------------------
+2023-03-09 10:29:08 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 32
+Address: http://localhost:8992/api/supervisor/validate
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[34], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/open-pos/11125/biometry], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"userId":"11125","password":null}
+--------------------------------------
+2023-03-09 10:29:08 [http-nio-8992-exec-3] INFO  u.c.g.geopostouch.log.EventLogger - ->validate request: SupervisorValidateRequest(userId=11125, password=null)
+2023-03-09 10:29:14 [http-nio-8992-exec-3] INFO  u.c.g.geopostouch.log.EventLogger - ->validate response: {"valid":false,"error":false,"errorMessage":"Error recuperando huella persistida del usuario: Huellero no conectado","needSupervisor":false,"forSupervisor":true}
+2023-03-09 10:29:14 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 32
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:14 GMT]}
+Payload: {"valid":false,"error":false,"errorMessage":"Error recuperando huella persistida del usuario: Huellero no conectado","needSupervisor":false,"forSupervisor":true}
+--------------------------------------
+2023-03-09 10:29:19 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 33
+Address: http://localhost:8992/api/supervisor/login
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[54], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/open-pos/11125/pass], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"userId":"11125","password":"000","isbiometry":false}
+--------------------------------------
+2023-03-09 10:29:19 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - ->supervisorLogin request: SupervisorLoginRequest(userId=11125, password=000, isbiometry=false)
+2023-03-09 10:29:19 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - ->supervisorLogin response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"userInformation":{"id":"11125","firstName":"Luis Andrés","lastName":"Gonzalez","sex":"M"},"recoverInfo":{"printRecover":false,"ticketRecover":false,"loggedCashier":{}}}
+2023-03-09 10:29:19 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 33
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:19 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"userInformation":{"id":"11125","firstName":"Luis Andrés","lastName":"Gonzalez","sex":"M"},"recoverInfo":{"printRecover":false,"ticketRecover":false,"loggedCashier":{}}}
+--------------------------------------
+2023-03-09 10:29:23 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 34
+Address: http://localhost:8992/api/supervisor/getUserInformation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[31], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/LoginCashier], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"userId":"1","type":"cashier"}
+--------------------------------------
+2023-03-09 10:29:23 [http-nio-8992-exec-6] INFO  u.c.g.geopostouch.log.EventLogger - ->getUserInformation request: getUserInformationRequest(userId=1, type=cashier)
+2023-03-09 10:29:23 [http-nio-8992-exec-6] INFO  u.c.g.geopostouch.log.EventLogger - ->getUserInformation response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"havePassword":true}
+2023-03-09 10:29:23 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 34
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:23 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"havePassword":true}
+--------------------------------------
+2023-03-09 10:29:26 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 35
+Address: http://localhost:8992/api/cashier/login
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[29], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/LoginCashier/1/pass], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"userId":"1","password":"1"}
+--------------------------------------
+2023-03-09 10:29:26 [http-nio-8992-exec-1] INFO  u.c.g.geopostouch.log.EventLogger - ->login request: CashierLoginRequest(userId=1, password=1)
+2023-03-09 10:29:26 [http-nio-8992-exec-1] INFO  u.c.g.geopostouch.log.EventLogger - ->login response: {"valid":false,"errorCode":"22","error":false,"errorMessage":"Password iválida","needSupervisor":false,"forSupervisor":false,"userInformation":{}}
+2023-03-09 10:29:26 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 35
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:26 GMT]}
+Payload: {"valid":false,"errorCode":"22","error":false,"errorMessage":"Password iválida","needSupervisor":false,"forSupervisor":false,"userInformation":{}}
+--------------------------------------
+2023-03-09 10:29:27 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 36
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[58], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/LoginCashier/1/pass], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"ERROR al loguear cajero 1: 22-Password iválida"}
+--------------------------------------
+2023-03-09 10:29:27 [http-nio-8992-exec-3] INFO  u.c.g.geopostouch.log.EventLogger - ERROR al loguear cajero 1: 22-Password iválida
+2023-03-09 10:29:27 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 36
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:27 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:30 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 37
+Address: http://localhost:8992/api/supervisor/getUserInformation
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[32], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/LoginCashier], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"userId":"12","type":"cashier"}
+--------------------------------------
+2023-03-09 10:29:30 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - ->getUserInformation request: getUserInformationRequest(userId=12, type=cashier)
+2023-03-09 10:29:30 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - ->getUserInformation response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"havePassword":true}
+2023-03-09 10:29:30 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 37
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:30 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"havePassword":true}
+--------------------------------------
+2023-03-09 10:29:32 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 38
+Address: http://localhost:8992/api/cashier/login
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[31], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/LoginCashier/12/pass], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"userId":"12","password":"12"}
+--------------------------------------
+2023-03-09 10:29:32 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - ->login request: CashierLoginRequest(userId=12, password=12)
+2023-03-09 10:29:32 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - ->login response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"userInformation":{"id":"12","firstName":"Part-Time 12","lastName":"Time","sex":"M"}}
+2023-03-09 10:29:32 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 38
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:32 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"userInformation":{"id":"12","firstName":"Part-Time 12","lastName":"Time","sex":"M"}}
+--------------------------------------
+2023-03-09 10:29:32 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 39
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[103], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/LoginCashier/12/pass], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se loguea el usuario 12. Se poolea preguntando si la caja esta lista para comenzar a vender."}
+--------------------------------------
+2023-03-09 10:29:32 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - Se loguea el usuario 12. Se poolea preguntando si la caja esta lista para comenzar a vender.
+2023-03-09 10:29:32 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 39
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:32 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:33 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 40
+Address: http://localhost:8992/api/sale/readyforsale
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/LoginCashier/12/pass], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:33 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 40
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:33 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"ready":true,"drawerOpen":false}
+--------------------------------------
+2023-03-09 10:29:33 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 41
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[52], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/LoginCashier/12/pass], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"La caja esta lista para comenzar a vender"}
+--------------------------------------
+2023-03-09 10:29:33 [http-nio-8992-exec-2] INFO  u.c.g.geopostouch.log.EventLogger - La caja esta lista para comenzar a vender
+2023-03-09 10:29:33 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 41
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:33 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:38 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 42
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[41], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/salePanel], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se accede al panel de busqueda"}
+--------------------------------------
+2023-03-09 10:29:38 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - Se accede al panel de busqueda
+2023-03-09 10:29:38 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 42
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:38 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:40 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 43
+Address: http://localhost:8992/api/sale/addArticle/
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[70], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/searchProduct], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"item":"7802215512285","inputType":"M","quantity":1,"promoCode":null}
+--------------------------------------
+2023-03-09 10:29:40 [http-nio-8992-exec-9] INFO  u.c.g.geopostouch.log.EventLogger - ->addArticle request: SaleArticleRequest(item=7802215512285, inputType=M, quantity=1, promoCode=null, authorized=false)
+2023-03-09 10:29:41 [http-nio-8992-exec-9] INFO  u.c.g.geopostouch.log.EventLogger - ->addArticle response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"ticketData":{"total":459.0,"rounded":0.0,"documentType":"sale","trxNumber":"437","documentId":"TICKET","clientData":{},"itemList":[{"id":0,"ean":"7802215512285","barcode":"7802215512285","articleId":"7802215512285","totalAmount":459.0,"unitAmount":459.0,"aditionalAmount":0.0,"quantity":1.0,"description":"GALLETA FRAC VAINILLA COSTA 130 GR","compositeBarcode":false,"cashable":false,"discountList":[{"amount":0.0,"units":0.0,"itemEntryPriceTotalDiscount":0.0,"itemEntryPriceUnitDiscount":0.0,"itemEntryPriceQuantity":0.0}],"associated":[],"properties":[],"presentation":"UN","pesable":false,"askQuantity":false,"virtualPackList":[],"foodticket":false,"promotedBarcode":false}],"paymentList":[]},"itemNeedAuthorization":false}
+2023-03-09 10:29:41 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 43
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:41 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"ticketData":{"total":459.0,"rounded":0.0,"documentType":"sale","trxNumber":"437","documentId":"TICKET","clientData":{},"itemList":[{"id":0,"ean":"7802215512285","barcode":"7802215512285","articleId":"7802215512285","totalAmount":459.0,"unitAmount":459.0,"aditionalAmount":0.0,"quantity":1.0,"description":"GALLETA FRAC VAINILLA COSTA 130 GR","compositeBarcode":false,"cashable":false,"discountList":[{"amount":0.0,"units":0.0,"itemEntryPriceTotalDiscount":0.0,"itemEntryPriceUnitDiscount":0.0,"itemEntryPriceQuantity":0.0}],"associated":[],"properties":[],"presentation":"UN","pesable":false,"askQuantity":false,"virtualPackList":[],"foodticket":false,"promotedBarcode":false}],"paymentList":[]},"itemNeedAuthorization":false}
+--------------------------------------
+2023-03-09 10:29:41 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 44
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[39], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/salePanel], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se regresa al panel de venta"}
+--------------------------------------
+2023-03-09 10:29:41 [http-nio-8992-exec-7] INFO  u.c.g.geopostouch.log.EventLogger - Se regresa al panel de venta
+2023-03-09 10:29:41 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 44
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:41 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:42 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 45
+Address: http://localhost:8992/api/sale/totalize
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/salePanel], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:42 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - ->totalize request: []
+2023-03-09 10:29:42 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - ->totalize response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"promotionMessages":[],"paymentModes":[{"id":"CLOSED_CARD","description":"Unipay","displayOrder":"1","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"1","description":"Efectivo","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":true},{"id":"231","description":"Webpay Debito","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"232","description":"Webpay Credito","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"233","description":"Tarjeta Call Center","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"234","description":"Cheque a fecha eCommerce","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"235","description":"Cheque a día eCommerce","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"431","description":"Klap Debito","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"432","description":"Klap Credito","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"62","description":"Mercado Pago","displayOrder":"11","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"36","description":"Cred. s/c - TBK","displayOrder":"28","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"37","description":"Cred. 3/c - TBK","displayOrder":"29","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"38","description":"Debito - TBK","displayOrder":"29","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"39","description":"Cred. 2/c - TBK","displayOrder":"32","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"400","description":"Transbank","displayOrder":"36","flow":"spdh","lowAllowed":50.0,"navigation":{"id":"2","description":"Debito\n (Red Compra)","displayOrder":"","lowAllowed":0.0,"allowsMultiplePayments":false},"allowsMultiplePayments":false},{"id":"400","description":"Transbank","displayOrder":"36","flow":"spdh","lowAllowed":0.0,"navigation":{"id":"3","description":"Credito","displayOrder":"","lowAllowed":0.0,"allowsMultiplePayments":false},"allowsMultiplePayments":false},{"id":"61","description":"Giftcard","displayOrder":"51","flow":"giftcardAccount","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"64","description":"CornerShop H2H","displayOrder":"64","flow":"cornershop","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"65","description":"Rappi Pay","displayOrder":"65","flow":"rappi","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"90","description":"Trf. Electronica","displayOrder":"83","flow":"cash","lowAllowed":500000.0,"allowsMultiplePayments":true},{"id":"150","description":"Corona H2H","displayOrder":"137","flow":"geoswitchPayment","lowAllowed":2000.0,"allowsMultiplePayments":true},{"id":"170","description":"T.Electronica Amipass","displayOrder":"157","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":true},{"id":"180","description":"Ticket Edenred","displayOrder":"160","flow":"ticket","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"181","description":"Cheque Sodexo","displayOrder":"160","flow":"ticket","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"183","description":"T.Electronica Edenred","displayOrder":"166","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"184","description":"T.Electronica Sodexo","displayOrder":"167","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"185","description":"Andes - TBK","displayOrder":"168","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"304","description":"Ripley - TBK","displayOrder":"174","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"187","description":"Junaeb Sodexo","displayOrder":"183","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"188","description":"Junaeb Edenred","displayOrder":"186","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"295","description":"BancoEstado - TBK","displayOrder":"268","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"296","description":"La Polar - TBK","displayOrder":"268","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"297","description":"AbcDin - TBK","displayOrder":"268","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"303","description":"Hites - TBK","displayOrder":"272","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"335","description":"Corona - TBK","displayOrder":"314","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"600","description":"Hites","displayOrder":"577","flow":"geoswitchPayment","lowAllowed":1000.0,"allowsMultiplePayments":true},{"id":"99","description":"Trf. Electrónica","displayOrder":"773","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":true},{"id":"03","description":"Mercaderia","displayOrder":"774","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":true},{"id":"86","description":"Efectivo","displayOrder":"794","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":true}]}
+2023-03-09 10:29:42 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 45
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:42 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"promotionMessages":[],"paymentModes":[{"id":"CLOSED_CARD","description":"Unipay","displayOrder":"1","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"1","description":"Efectivo","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":true},{"id":"231","description":"Webpay Debito","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"232","description":"Webpay Credito","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"233","description":"Tarjeta Call Center","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"234","description":"Cheque a fecha eCommerce","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"235","description":"Cheque a día eCommerce","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"431","description":"Klap Debito","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"432","description":"Klap Credito","displayOrder":"1","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"62","description":"Mercado Pago","displayOrder":"11","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"36","description":"Cred. s/c - TBK","displayOrder":"28","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"37","description":"Cred. 3/c - TBK","displayOrder":"29","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"38","description":"Debito - TBK","displayOrder":"29","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"39","description":"Cred. 2/c - TBK","displayOrder":"32","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"400","description":"Transbank","displayOrder":"36","flow":"spdh","lowAllowed":50.0,"navigation":{"id":"2","description":"Debito\n (Red Compra)","displayOrder":"","lowAllowed":0.0,"allowsMultiplePayments":false},"allowsMultiplePayments":false},{"id":"400","description":"Transbank","displayOrder":"36","flow":"spdh","lowAllowed":0.0,"navigation":{"id":"3","description":"Credito","displayOrder":"","lowAllowed":0.0,"allowsMultiplePayments":false},"allowsMultiplePayments":false},{"id":"61","description":"Giftcard","displayOrder":"51","flow":"giftcardAccount","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"64","description":"CornerShop H2H","displayOrder":"64","flow":"cornershop","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"65","description":"Rappi Pay","displayOrder":"65","flow":"rappi","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"90","description":"Trf. Electronica","displayOrder":"83","flow":"cash","lowAllowed":500000.0,"allowsMultiplePayments":true},{"id":"150","description":"Corona H2H","displayOrder":"137","flow":"geoswitchPayment","lowAllowed":2000.0,"allowsMultiplePayments":true},{"id":"170","description":"T.Electronica Amipass","displayOrder":"157","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":true},{"id":"180","description":"Ticket Edenred","displayOrder":"160","flow":"ticket","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"181","description":"Cheque Sodexo","displayOrder":"160","flow":"ticket","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"183","description":"T.Electronica Edenred","displayOrder":"166","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"184","description":"T.Electronica Sodexo","displayOrder":"167","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"185","description":"Andes - TBK","displayOrder":"168","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"304","description":"Ripley - TBK","displayOrder":"174","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"187","description":"Junaeb Sodexo","displayOrder":"183","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"188","description":"Junaeb Edenred","displayOrder":"186","flow":"geoswitchPayment","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"295","description":"BancoEstado - TBK","displayOrder":"268","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"296","description":"La Polar - TBK","displayOrder":"268","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"297","description":"AbcDin - TBK","displayOrder":"268","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"303","description":"Hites - TBK","displayOrder":"272","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"335","description":"Corona - TBK","displayOrder":"314","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":false},{"id":"600","description":"Hites","displayOrder":"577","flow":"geoswitchPayment","lowAllowed":1000.0,"allowsMultiplePayments":true},{"id":"99","description":"Trf. Electrónica","displayOrder":"773","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":true},{"id":"03","description":"Mercaderia","displayOrder":"774","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":true},{"id":"86","description":"Efectivo","displayOrder":"794","flow":"cash","lowAllowed":0.0,"allowsMultiplePayments":true}]}
+--------------------------------------
+2023-03-09 10:29:44 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 46
+Address: http://localhost:8992/api/sale/getTicketData/
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/pre-payment/donation], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:44 [http-nio-8992-exec-9] INFO  u.c.g.geopostouch.log.EventLogger - ->getTicketData request: []
+2023-03-09 10:29:44 [http-nio-8992-exec-9] INFO  u.c.g.geopostouch.log.EventLogger - ->getTicketData response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"ticketData":{"total":459.0,"rounded":0.0,"documentType":"sale","trxNumber":"437","documentId":"TICKET","clientData":{},"itemList":[{"id":0,"ean":"7802215512285","barcode":"7802215512285","articleId":"7802215512285","totalAmount":459.0,"unitAmount":459.0,"aditionalAmount":0.0,"quantity":1.0,"description":"GALLETA FRAC VAINILLA COSTA 130 GR","compositeBarcode":false,"cashable":false,"discountList":[{"amount":0.0,"units":0.0,"itemEntryPriceTotalDiscount":0.0,"itemEntryPriceUnitDiscount":0.0,"itemEntryPriceQuantity":0.0}],"associated":[],"properties":[],"presentation":"UN","pesable":false,"askQuantity":false,"virtualPackList":[],"foodticket":false,"promotedBarcode":false}],"paymentList":[]}}
+2023-03-09 10:29:44 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 46
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:44 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"ticketData":{"total":459.0,"rounded":0.0,"documentType":"sale","trxNumber":"437","documentId":"TICKET","clientData":{},"itemList":[{"id":0,"ean":"7802215512285","barcode":"7802215512285","articleId":"7802215512285","totalAmount":459.0,"unitAmount":459.0,"aditionalAmount":0.0,"quantity":1.0,"description":"GALLETA FRAC VAINILLA COSTA 130 GR","compositeBarcode":false,"cashable":false,"discountList":[{"amount":0.0,"units":0.0,"itemEntryPriceTotalDiscount":0.0,"itemEntryPriceUnitDiscount":0.0,"itemEntryPriceQuantity":0.0}],"associated":[],"properties":[],"presentation":"UN","pesable":false,"askQuantity":false,"virtualPackList":[],"foodticket":false,"promotedBarcode":false}],"paymentList":[]}}
+--------------------------------------
+2023-03-09 10:29:46 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 47
+Address: http://localhost:8992/api/sale/selectPayment?paymentMode=1
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/paymentModes], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:46 [http-nio-8992-exec-1] INFO  u.c.g.geopostouch.log.EventLogger - ->selectPayment request: [paymentMode=1]
+2023-03-09 10:29:46 [http-nio-8992-exec-1] INFO  u.c.g.geopostouch.log.EventLogger - ->selectPayment response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"roundedTotal":460.0,"total":459.0,"totalWithRestrictions":0.0,"hasRestrictions":false}
+2023-03-09 10:29:46 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 47
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:46 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"roundedTotal":460.0,"total":459.0,"totalWithRestrictions":0.0,"hasRestrictions":false}
+--------------------------------------
+2023-03-09 10:29:46 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 48
+Address: http://localhost:8992/api/sale/getTicketData/
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/paymentModes], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:46 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - ->getTicketData request: []
+2023-03-09 10:29:46 [http-nio-8992-exec-5] INFO  u.c.g.geopostouch.log.EventLogger - ->getTicketData response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"ticketData":{"total":459.0,"rounded":0.0,"documentType":"sale","trxNumber":"437","documentId":"TICKET","clientData":{},"itemList":[{"id":0,"ean":"7802215512285","barcode":"7802215512285","articleId":"7802215512285","totalAmount":459.0,"unitAmount":459.0,"aditionalAmount":0.0,"quantity":1.0,"description":"GALLETA FRAC VAINILLA COSTA 130 GR","compositeBarcode":false,"cashable":false,"discountList":[{"amount":0.0,"units":0.0,"itemEntryPriceTotalDiscount":0.0,"itemEntryPriceUnitDiscount":0.0,"itemEntryPriceQuantity":0.0}],"associated":[],"properties":[],"presentation":"UN","pesable":false,"askQuantity":false,"virtualPackList":[],"foodticket":false,"promotedBarcode":false}],"paymentList":[]}}
+2023-03-09 10:29:46 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 48
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:46 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"ticketData":{"total":459.0,"rounded":0.0,"documentType":"sale","trxNumber":"437","documentId":"TICKET","clientData":{},"itemList":[{"id":0,"ean":"7802215512285","barcode":"7802215512285","articleId":"7802215512285","totalAmount":459.0,"unitAmount":459.0,"aditionalAmount":0.0,"quantity":1.0,"description":"GALLETA FRAC VAINILLA COSTA 130 GR","compositeBarcode":false,"cashable":false,"discountList":[{"amount":0.0,"units":0.0,"itemEntryPriceTotalDiscount":0.0,"itemEntryPriceUnitDiscount":0.0,"itemEntryPriceQuantity":0.0}],"associated":[],"properties":[],"presentation":"UN","pesable":false,"askQuantity":false,"virtualPackList":[],"foodticket":false,"promotedBarcode":false}],"paymentList":[]}}
+--------------------------------------
+2023-03-09 10:29:46 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 49
+Address: http://localhost:8992/api/pos/log
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[68], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/paymentModes], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"text":"Se selecciona medio de pago id: 1(Efectivo) con monto 460"}
+--------------------------------------
+2023-03-09 10:29:46 [http-nio-8992-exec-6] INFO  u.c.g.geopostouch.log.EventLogger - Se selecciona medio de pago id: 1(Efectivo) con monto 460
+2023-03-09 10:29:46 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 49
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:46 GMT]}
+Payload: {}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 50
+Address: http://localhost:8992/api/printer/checkPrinter
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/managePaymentComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-7] INFO  u.c.g.geopostouch.log.EventLogger - -> checkPrinter request: []
+2023-03-09 10:29:48 [http-nio-8992-exec-7] INFO  u.c.g.geopostouch.log.EventLogger - -> checkPrinter response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false}
+2023-03-09 10:29:48 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 50
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:48 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 51
+Address: http://localhost:8992/api/sale/validatePayment/
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[39], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/managePaymentComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"paymentMode":"1","paymentAmount":460}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - ->validatePayment request: ValidatePaymentRequest(paymentAmount=460, paymentMode=1)
+2023-03-09 10:29:48 [http-nio-8992-exec-10] INFO  u.c.g.geopostouch.log.EventLogger - ->validatePayment response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false}
+2023-03-09 10:29:48 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 51
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:48 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 52
+Address: http://localhost:8992/api/sale/executePayment/
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Length=[182], content-type=[application/json], host=[localhost:8992], origin=[http://localhost:8992], referer=[http://localhost:8992/managePaymentComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+Payload: {"paymentSelected":"{\"groupedPaymentsModes\":[],\"id\":\"1\",\"description\":\"Efectivo\",\"flow\":\"cash\",\"displayOrder\":1,\"allowsMultiplePayments\":true}","paymentAmount":460}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - ->executePayment request: ExecutePaymentRequest(paymentAmount=460, paymentSelected={"groupedPaymentsModes":[],"id":"1","description":"Efectivo","flow":"cash","displayOrder":1,"allowsMultiplePayments":true})
+2023-03-09 10:29:48 [http-nio-8992-exec-4] INFO  u.c.g.geopostouch.log.EventLogger - ->executePayment response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false}
+2023-03-09 10:29:48 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 52
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:48 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 53
+Address: http://localhost:8992/api/sale/getTicketData/
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/managePaymentComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-8] INFO  u.c.g.geopostouch.log.EventLogger - ->getTicketData request: []
+2023-03-09 10:29:48 [http-nio-8992-exec-8] INFO  u.c.g.geopostouch.log.EventLogger - ->getTicketData response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"ticketData":{"total":459.0,"rounded":1.0,"documentType":"sale","trxNumber":"437","documentId":"TICKET","clientData":{},"itemList":[{"id":0,"ean":"7802215512285","barcode":"7802215512285","articleId":"7802215512285","totalAmount":459.0,"unitAmount":459.0,"aditionalAmount":0.0,"quantity":1.0,"description":"GALLETA FRAC VAINILLA COSTA 130 GR","compositeBarcode":false,"cashable":false,"discountList":[{"amount":0.0,"units":0.0,"itemEntryPriceTotalDiscount":0.0,"itemEntryPriceUnitDiscount":0.0,"itemEntryPriceQuantity":0.0}],"associated":[],"properties":[],"presentation":"UN","pesable":false,"askQuantity":false,"virtualPackList":[],"foodticket":false,"promotedBarcode":false}],"paymentList":[{"id":"1","description":"Efectivo","amount":460.0}]}}
+2023-03-09 10:29:48 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 53
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:48 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"ticketData":{"total":459.0,"rounded":1.0,"documentType":"sale","trxNumber":"437","documentId":"TICKET","clientData":{},"itemList":[{"id":0,"ean":"7802215512285","barcode":"7802215512285","articleId":"7802215512285","totalAmount":459.0,"unitAmount":459.0,"aditionalAmount":0.0,"quantity":1.0,"description":"GALLETA FRAC VAINILLA COSTA 130 GR","compositeBarcode":false,"cashable":false,"discountList":[{"amount":0.0,"units":0.0,"itemEntryPriceTotalDiscount":0.0,"itemEntryPriceUnitDiscount":0.0,"itemEntryPriceQuantity":0.0}],"associated":[],"properties":[],"presentation":"UN","pesable":false,"askQuantity":false,"virtualPackList":[],"foodticket":false,"promotedBarcode":false}],"paymentList":[{"id":"1","description":"Efectivo","amount":460.0}]}}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 54
+Address: http://localhost:8992/api/client/customerEcologicTicket
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/managePaymentComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-3] INFO  u.c.g.geopostouch.log.EventLogger - -> inputCoupon request: []
+2023-03-09 10:29:48 [http-nio-8992-exec-3] INFO  u.c.g.geopostouch.log.EventLogger - <- inputCoupon request: []
+2023-03-09 10:29:48 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 54
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:48 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"customerEcologicTicketEnabled":false,"connectionToServerEnabled":false,"question":""}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 55
+Address: http://localhost:8992/api/sale/endSale?sendEmail=false
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/managePaymentComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:48 [http-nio-8992-exec-1] INFO  u.c.g.geopostouch.log.EventLogger - ->endSale request: []
+2023-03-09 10:29:48 [http-nio-8992-exec-1] INFO  u.c.g.geopostouch.log.EventLogger - ->endSale response: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"canRetry":false,"canCancel":false}
+2023-03-09 10:29:48 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 55
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:48 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"canRetry":false,"canCancel":false}
+--------------------------------------
+2023-03-09 10:29:49 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 56
+Address: http://localhost:8992/api/sale/readyforsale
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:29:49 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 56
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:29:49 GMT]}
+Payload: {"valid":false,"errorCode":"94","error":false,"errorMessage":"Error al obtener número de folio.","needSupervisor":false,"forSupervisor":false,"ready":false,"drawerOpen":false}
+--------------------------------------
+2023-03-09 10:30:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 57
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:30:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 57
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:30:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:31:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 58
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:31:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 58
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:31:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:32:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 59
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:32:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 59
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:32:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:32:40 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 60
+Address: http://localhost:8992/api/sale/readyforsale
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:32:40 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 60
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:32:40 GMT]}
+Payload: {"valid":false,"errorCode":"94","error":false,"errorMessage":"Error al obtener número de folio.","needSupervisor":false,"forSupervisor":false,"ready":false,"drawerOpen":false}
+--------------------------------------
+2023-03-09 10:33:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 61
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:33:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 61
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:33:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:34:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 62
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:34:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 62
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:34:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:35:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 63
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:35:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 63
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:35:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:36:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 64
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:36:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 64
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:36:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:37:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 65
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:37:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 65
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:37:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:37:37 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 66
+Address: http://localhost:8992/api/sale/readyforsale
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:37:37 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 66
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:37:37 GMT]}
+Payload: {"valid":false,"errorCode":"94","error":false,"errorMessage":"Error al obtener número de folio.","needSupervisor":false,"forSupervisor":false,"ready":false,"drawerOpen":false}
+--------------------------------------
+2023-03-09 10:37:39 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 67
+Address: http://localhost:8992/api/sale/readyforsale
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:37:39 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 67
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:37:39 GMT]}
+Payload: {"valid":false,"errorCode":"94","error":false,"errorMessage":"Error al obtener número de folio.","needSupervisor":false,"forSupervisor":false,"ready":false,"drawerOpen":false}
+--------------------------------------
+2023-03-09 10:38:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 68
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:38:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 68
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:38:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:39:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 69
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:39:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 69
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:39:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:40:03 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 70
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:40:03 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 70
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:40:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:41:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 71
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:41:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 71
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:41:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:42:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 72
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:42:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 72
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:42:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:43:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 73
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:43:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 73
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:43:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:44:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 74
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:44:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 74
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:44:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:45:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 75
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:45:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 75
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:45:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:46:03 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 76
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:46:03 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 76
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:46:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:47:03 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 77
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:47:03 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 77
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:47:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:48:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 78
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:48:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 78
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:48:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:49:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 79
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:49:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 79
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:49:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:50:03 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 80
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:50:03 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 80
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:50:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:51:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 81
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:51:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 81
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:51:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:52:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 82
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:52:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 82
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:52:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:53:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 83
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:53:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 83
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:53:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:54:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 84
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:54:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 84
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:54:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:55:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 85
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:55:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 85
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:55:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:56:03 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 86
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:56:03 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 86
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:56:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:57:03 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 87
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:57:03 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 87
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:57:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:58:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 88
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:58:03 [http-nio-8992-exec-5] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 88
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:58:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 10:59:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 89
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 10:59:03 [http-nio-8992-exec-6] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 89
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 13:59:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 11:00:03 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 90
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 11:00:03 [http-nio-8992-exec-9] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 90
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 14:00:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 11:01:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 91
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 11:01:03 [http-nio-8992-exec-7] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 91
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 14:01:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 11:02:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 92
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 11:02:03 [http-nio-8992-exec-10] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 92
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 14:02:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 11:03:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 93
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 11:03:03 [http-nio-8992-exec-2] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 93
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 14:03:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 11:04:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 94
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 11:04:03 [http-nio-8992-exec-4] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 94
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 14:04:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 11:05:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 95
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 11:05:03 [http-nio-8992-exec-8] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 95
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 14:05:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 11:06:03 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 96
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 11:06:03 [http-nio-8992-exec-3] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 96
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 14:06:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------
+2023-03-09 11:07:03 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingInInterceptor - Inbound Message
+----------------------------
+ID: 97
+Address: http://localhost:8992/api/pos/getPosInformation
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], accept-language=[en-US,en;q=0.9], connection=[keep-alive], Content-Type=[null], host=[localhost:8992], referer=[http://localhost:8992/screenEndComponent], sec-ch-ua=["Not;A=Brand";v="99", "Chromium";v="106"], sec-ch-ua-mobile=[?0], sec-ch-ua-platform=["Linux"], sec-fetch-dest=[empty], sec-fetch-mode=[cors], sec-fetch-site=[same-origin], user-agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36]}
+--------------------------------------
+2023-03-09 11:07:03 [http-nio-8992-exec-1] INFO  o.a.c.i.LoggingOutInterceptor - Outbound Message
+---------------------------
+ID: 97
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Thu, 09 Mar 2023 14:07:03 GMT]}
+Payload: {"valid":true,"error":false,"needSupervisor":false,"forSupervisor":false,"online":true,"printerError":false,"data":{"workMode":"TOUCH","currentState":"/paperless/errorRequestFolio"}}
+--------------------------------------

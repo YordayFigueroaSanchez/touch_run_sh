@@ -3,7 +3,6 @@ GEOPOSTOUCH_OPTS=-Xmx1024M
 LOG=output.log
 LOG_EXTRA=runShTouch.log
 NUMBER_PROCESS_MORE_THAT=8
-backendOK=0
 export GEOPOS_HOME=/home/geocom/geopos/current
 export GEOPOS_TOUCH=/home/geocom/geopostouch/current
 
@@ -22,15 +21,6 @@ chown geocom:users -R /home/geocom/geopostouch/
 
 echo $(date -u) "iniciando geopostouch $RELEASE" >> $GEOPOS_TOUCH/$LOG_EXTRA
 $JAVA_HOME_8/bin/java ${GEOPOSTOUCH_OPTS} -jar ${RELEASE} > $LOG 2>&1 &
-while [[ "$backendOK" -eq 0 ]];
-do
-	echo $(date -u) "Check backend" >> $GEOPOS_TOUCH/$LOG_EXTRA
-	sleep 1	
-	status_code=$(curl --write-out %{http_code} --silent --output /dev/null http://localhost:8992/api/pos/echo)
-	if [[ "$status_code" -eq 200 ]] ;then
-		backendOK=1
-	fi
-done
 
 echo $(date -u) "seteando ruta del navegador" >> $GEOPOS_TOUCH/$LOG_EXTRA
 cd nwjs/nwjs-sdk-v0.69.1-linux-x64
