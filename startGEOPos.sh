@@ -46,7 +46,7 @@ else
 			cd $GEOPOS_HOME
 			. ./runPosUnifyDebug.sh>>$GEOPOS_HOME/logs/startGEOPosOut.log
 
-			sleep 60
+			#sleep 60
 
 			cd $GEOPOSTOUCH
 			. ./start.sh>>$GEOPOSTOUCH/logs/start.log	
